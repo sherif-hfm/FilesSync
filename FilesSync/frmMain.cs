@@ -64,7 +64,7 @@ namespace FilesSync
                     if (isExist == null)
                     {
                         FileSystemWatcher watcher = new FileSystemWatcher(path.Path);
-                        watcher.IncludeSubdirectories = true;
+                        watcher.IncludeSubdirectories = path.IncludeSubdirectories;
                         watcher.NotifyFilter = NotifyFilters.LastAccess
                                          | NotifyFilters.LastWrite
                                          | NotifyFilters.FileName

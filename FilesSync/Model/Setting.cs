@@ -44,11 +44,14 @@ namespace FilesSync.Model
             
         }
 
+        public string Name { get; set; }
+
         public string Path { get; set; }
 
         public bool IsActive { get; set; }
 
-        
+        public bool IncludeSubdirectories { get; set; }
+
     }
 
     public class DestinationsServer
